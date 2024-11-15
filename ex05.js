@@ -7,6 +7,5 @@ function isEnoughMoney(price, wallet) {
         return true;
     }
 }
-
 console.log(isEnoughMoney(10, 0)); // Résultat attendu: false
 console.log(isEnoughMoney(5, 25)); // Résultat attendu: true
