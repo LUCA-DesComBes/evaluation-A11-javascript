@@ -1,14 +1,8 @@
 // ex07.js
 
 function isNationalIDValid(name, age, zip, password) {
-	if(name != ""){
-        return true;
-    } else if(age > 18 || age < 65){
-        return true;
-    } else if(zip < 99999 && zip > 0){
-        return true;
-    } else if(password != "qwerty" || password != "azerty" || password != "1234"){
-        return true;
+	if(name != "" && age > 18 || age < 65 && zip < 99999 || zip > 0 && password != "qwerty" || password != "azerty" || password != "1234"){
+        return true;    
     } else {
         return false;
     }
